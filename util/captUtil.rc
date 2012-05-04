@@ -1,0 +1,174 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "FileDescription", "captchaT Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "captchaT"
+            VALUE "LegalCopyright", "Copyright (C) 2009"
+            VALUE "OriginalFilename", "captchaT.exe"
+            VALUE "ProductName", "captchaT Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_MAIN DIALOGEX 0, 0, 302, 191
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "CaptchaUtil"
+FONT 9, "ËÎÌו", 400, 0, 0x86
+BEGIN
+END
+
+IDD_DIALOG_GENERATOR DIALOGEX 0, 0, 295, 175
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 9, "ËÎÌו", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Add..",IDC_BUTTON_FONT,248,97,41,16
+    PUSHBUTTON      "Generate!",IDC_BUTTON_GENERATE,79,156,56,16
+    PUSHBUTTON      "...",IDC_BUTTON_CODE,266,6,29,13
+    RTEXT           "CodeFile:",IDC_STATIC,5,6,39,11
+    EDITTEXT        IDC_EDIT_CODE_FILE,50,6,208,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    GROUPBOX        "Font",IDC_STATIC,4,27,291,123
+    CONTROL         "",IDC_LIST_FONT,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,11,41,230,97
+    PUSHBUTTON      "Save...",IDC_BUTTON_SAVE,160,156,56,16,WS_DISABLED
+    PUSHBUTTON      "Clean",IDC_BUTTON_FONT_CLEAN,248,122,41,16
+END
+
+IDD_DIALOG_TEST DIALOGEX 0, 0, 295, 175
+STYLE DS_SETFONT | WS_CHILD | WS_SYSMENU
+FONT 9, "ËÎÌו", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_CANVAS,"Static",SS_BLACKRECT,62,19,170,42
+    PUSHBUTTON      "Random!",IDC_BUTTON_RAND,160,156,56,16,WS_DISABLED
+    GROUPBOX        "Answer",IDC_STATIC,6,5,287,143
+    PUSHBUTTON      "LoadFont...",IDC_BUTTON_LOAD,80,156,56,16
+    CONTROL         "",IDC_RADIO_ANSWER_1,"Button",BS_AUTORADIOBUTTON,107,67,77,12
+    CONTROL         "",IDC_RADIO_ANSWER_2,"Button",BS_AUTORADIOBUTTON,107,84,77,12
+    CONTROL         "",IDC_RADIO_ANSWER_3,"Button",BS_AUTORADIOBUTTON,107,101,77,12
+    CONTROL         "",IDC_RADIO_ANSWER_4,"Button",BS_AUTORADIOBUTTON,107,118,77,12
+    CONTROL         "",IDC_STATIC_RESULT,"Static",SS_OWNERDRAW,58,95,32,32
+    LTEXT           "",IDC_STATIC_SIZE,241,41,46,21
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 295
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON_CHECKMARK      ICON                    "CheckMark.ico"
+IDI_ICON_CROSSMARK      ICON                    "CrossMark.ico"
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
